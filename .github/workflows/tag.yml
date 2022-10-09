@@ -230,7 +230,11 @@ jobs:
 
   build_on_osx:
     needs: create_release
-    runs-on: macos-latest
+   # runs-on: macos-latest
+    runs-on:
+      - self-hosted
+      - macos-latest
+      - ARM64
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
