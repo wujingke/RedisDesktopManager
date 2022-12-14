@@ -19,7 +19,7 @@ env:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   create_release:
-    runs-on: self-hosted
+    runs-on: macos-latest
     # https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjobs_idoutputs
     # Map a step output to a job output
     outputs:
@@ -233,8 +233,6 @@ jobs:
    # runs-on: macos-latest
     runs-on:
       - self-hosted
-      - macos-latest
-      - ARM64
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
